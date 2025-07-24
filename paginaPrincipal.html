@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f2f5;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            margin-top: 0;
+        }
+
+        .btn {
+            background-color: #4a90e2;
+            color: white;
+            padding: 0.6rem 1.2rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #357ABD;
+        }
+
+        .logout {
+            float: right;
+            background: #e74c3c;
+        }
+
+        .logout:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Bem-vindo ao Sistema</h1>
+        <button class="btn logout" onclick="logout()">Sair</button>
+    </header>
+
+    <div class="container">
+        <h2>Olá, usuário!</h2>
+        <p>Esta é sua página principal após o login. Aqui você pode ver informações importantes, navegar pelo sistema ou acessar outras funcionalidades.</p>
+
+        <button class="btn" onclick="alert('Funcionalidade em construção')">Ver Perfil</button>
+        <button class="btn" onclick="alert('Funcionalidade em construção')">Configurações</button>
+    </div>
+
+    <script>
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+
+</body>
+</html>
